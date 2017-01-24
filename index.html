@@ -1,0 +1,116 @@
+<!-- Ignacio Cortizo Pol nachocpol@gmail.com -->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> AndreaFm </title>
+		<link rel = "stylesheet" href = "css/w3.css">
+		<link rel = "stylesheet" href = "css/main.css">
+		<script src = "js/imageManger.js"></script> 
+
+	</head>
+
+	<body onload="initImgs()">
+
+		<!-- Title and subtitle -->
+		<div class = "w3-container" align = "center">
+			<h1> ANDREA FAYOS </h1>
+			<h1 style = "color:#8B0000; word-spacing: 10px; letter-spacing: 5px;"> CONCEPT ARTIST</h1>
+		</div>
+
+		<!-- Nav bar -->
+		<div class = "w3-container w3-white" style = "padding-top: 50px">
+			<div align="center">
+				<a class = "aSelected" href="index.html">HOME</a>
+				<a class = "aUnSelected" href="contact.html">CONTACT</a>
+			</div>
+		</div>
+
+		<!-- This div will store all the images -->
+		<div class = "w3-container" id = "imgContainer">
+		</div>
+
+		<!-- This div will pop-up and show the images -->
+		<div id = "modal" class = "w3-modal" onclick = "closeModal(this)">
+			<div class = "w3-modal-content" style = "padding: 0px 40px 40px 40px">
+				<div class = "w3-container">
+
+					<span onclick="document.getElementById('modal').style.display='none'" class="w3-closebtn">
+						&times;
+					</span>
+
+      				<p style = "color:#8B0000; word-spacing: 10px; letter-spacing: 5px; font-size: 20px" id = "modalTitle">  </p>
+
+      				<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="changeImg(-1)">&#10094;</a>
+					<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="changeImg(1)">&#10095;</a>
+
+	      			<!-- Process 1 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p1" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 2 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p2" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 3 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p3" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 4 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p4" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 5 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p5" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 6 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p6" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 7 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p7" src = "img/preview.jpg">
+	      			</div>
+
+	      			<!-- Process 8 -->
+	      			<div style = "padding-bottom: 10px" class = "w3-row">
+	      				<img class = "w3-col w3-rest" id = "p8" src = "img/preview.jpg">
+	      			</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- Social media icons -->
+		<div id = "socialmedia">
+			<a id = "smLink" target="_blank" href="https://www.artstation.com/artist/andreafayos">
+				<img id = "smImg" src="img/icos/artstation_icon.png">
+			</a>
+
+			<a id = "smLink" target="_blank" href="#">
+				<img id = "smImg" src="img/icos/facebook_icon.png">
+			</a>
+
+			<a id = "smLink" target="_blank" href="https://www.linkedin.com/in/andrea-fayos-molt%C3%B3-40a67b136/">
+				<img id = "smImg" src="img/icos/linkedin_icon.png">
+			</a>
+
+			<a id = "smLink" target="_blank" href="https://twitter.com/andreafayosmo">
+				<img id = "smImg" src="img/icos/twitter_icon.png">
+			</a>
+		</div>
+		
+		<!-- Footer -->
+		<div id="footer">
+			<p> &copy; Andrea Fayos 2017 - 2018 </p>
+		</div>
+
+	</body>
+</html>

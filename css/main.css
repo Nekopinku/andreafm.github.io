@@ -1,0 +1,99 @@
+/*
+	Ignacio Cortizo Pol nachocpol@gmail.com
+*/
+
+@font-face
+{
+	font-family: "EncodeSansNarrow";
+	src:url ('font/EncodeSansNarrow.ttf');
+}
+
+html
+{
+	font-family: "EncodeSansNarrow";
+	overflow-y: scroll; /* Hack to solve problem with media icons */
+}
+
+body
+{
+
+}
+
+.aSelected
+{
+	color:white;
+	text-decoration: none;
+	background-color: #8B0000;
+	height: 120px;
+	padding: 10px 16px 10px 16px;
+}
+
+.aUnSelected
+{
+	color:#000000;
+	text-decoration: none;
+	padding: 10px 16px 10px 16px;
+}
+
+#imgContainer
+{
+	padding: 25px 0px 35px 0px;
+}
+
+#contact
+{
+	padding: 46px 0px 100px 0px;
+	margin:auto;
+	width: 45%;
+	text-align: center;
+}
+
+#footer
+{
+	text-align: center;
+	color:#8B0000;
+	font-weight: bold;
+}
+
+#portrait
+{
+	max-width: 30%;
+	display: block;
+    margin: 50px auto;
+}
+
+.pImg
+{
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.pImg:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#socialmedia
+{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+#smImg
+{
+	max-width: 50px;
+}
+
+#smImg:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#smLink
+{
+	text-decoration: none;
+}
